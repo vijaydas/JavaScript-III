@@ -13,22 +13,52 @@
 
 // code example for Window Binding
 
-function windowThis(name){
-    console.log(this.name);
-    return name;
+function windowThis(name) {
+    console.log(this.name)
 }
 
-windowThis("Viva");
+windowThis("Stewie");
+
 
 // Principle 2
 
-
-
 // code example for Implicit Binding
+
+const hello = function(object) {
+    object.hello = function () {
+        console.log(`Hello, my name is ${this.name}`);
+    };
+};
+
+const homer = {
+    name: 'Homer', 
+    age: 45
+};
+
+const marge = {
+    name: 'Marge',
+    age: 40
+};
+
+hello(homer);
+hello(marge);
+
+homer.hello();
+marge.hello();
+
 
 // Principle 3
 
 // code example for New Binding
+
+const Dog = function(name, breed, color) {
+    this.name = name;
+    this.breed = breed;
+    this.color = color;
+};
+
+const Nellie = new Dog('Nellie', 'Labrador', 'Black');
+
 
 // Principle 4
 

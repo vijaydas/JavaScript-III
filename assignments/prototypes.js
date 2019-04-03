@@ -16,7 +16,7 @@
   * destroy() // prototype method that returns: `${this.name} was removed from the game.`
 */
 
-function GameObject (attributes){
+function GameObject(attributes){
   this.createdAt = attributes.createdAt;
   this.name = attributes.name;
   this.dimensions = attributes.dimensions;
@@ -34,7 +34,7 @@ GameObject.prototype.destroy = function(){
   * should inherit destroy() from GameObject's prototype
 */
 
-const CharacterStats = new GameObject
+function CharacterStats = new GameObject
 
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===
