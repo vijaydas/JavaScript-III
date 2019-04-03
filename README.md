@@ -12,6 +12,8 @@ This challenge focuses on using the `this` keyword as well as getting comfortabl
 * [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 * [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 * [ ] Push commits: git push origin `<firstName-lastName>`.
+* [ ] Make small change in README and make initial commit and push`.
+
 
 **Follow these steps for completing your project.**
 
