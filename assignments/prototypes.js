@@ -35,10 +35,15 @@ GameObject.prototype.destroy = function(){
 */
 
 function CharacterStats(attributes){
+  this.healthPoints = attributes.healthPoints;
   
-}
+ }
 
-ew GameObject
+ CharacterStats.prototype.takeDamage = function(){
+
+ }
+
+new GameObject
 
 /*
   === Humanoid (Having an appearance or character resembling that of a human.) ===

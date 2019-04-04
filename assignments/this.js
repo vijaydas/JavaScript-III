@@ -59,7 +59,26 @@ const Dog = function(name, breed, color) {
 
 const Nellie = new Dog('Nellie', 'Labrador', 'Black');
 
+console.log(Nellie);
 
 // Principle 4
 
 // code example for Explicit Binding
+
+function JungleMember(member) {
+    this.intro = 'The Law of the jungle is';
+    this.member = member;
+    this.prey = function() {
+      console.log(`${this.intro} the ${this.member} eats.`);
+      console.log(this);
+    };
+  }
+  
+  const lion = new JungleMember('Lion');
+  const rabbit = new JungleMember('Rabbit');
+  
+  lion.prey();
+  rabbit.prey();
+  
+  lion.prey.call(rabbit);
+  rabbit.prey.apply(lion);
